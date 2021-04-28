@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 6.5:  Integrals and Averages}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+If we have a set of data $x_1$, $x_2$, $x_3$,  ...  $x_N$, we define the average $\bar{x}$ as:\\
+
+\vspace{0.25in}
+
+
+EXAMPLE:\\
+
+In order to calculate the average outside temperature over a period of 10 hours, we could collect data at a set of times.\\
+
+
+\vspace{1.5in}
+
+Calcuate $\bar{T}$:\\
+
+\vspace{.25in}
+
+For a more accurate average, we can collect more data.
+
+\vspace{2.5in}
+
+If we let the number of data points $N$ go to infinity, we can produce an integral
+
+\pagebreak
+
+DEFINITION:\\
+
+The {\bf average value} of a function $f$ on an interval $[a,b]$ is $\bar{f}$\\
+
+\vspace{1.5in}
+
+
+EXAMPLE: \\
+
+Find the average value of $f(x) = \sqrt[3]{x} $ on the interval $[0,8]$.\\
+
+\vspace{1.5in}
+
+APPLICATION:\\
+
+A growing fish has length that is modeled by the function $L(t) = 20 - \frac{20}{t+1}$.\\
+\begin{enumerate}
+\item{What is the average length of the fish over the first 10 years of its life?}
+\item{What is the average length of the fish over the first $T$ years of its life?}
+\item{What happens to this average as $T$ gets large?}
+
+\end{enumerate}
+
+
+\vspace{2.8in}
+
+APPLICATION:\\
+
+The velocity of fluid flowing slowly in a cylindrical tube of radius $R$ is a function of the radial distance from the center.
+
+\begin{displaymath}
+v(r) = \frac{P}{4\eta L}(R^2 - r^2)
+  \end{displaymath}
+
+Find the average velocity from $r=0$ in the center to $r=R$ on the edge.  Make a comparision to the maximum velocity.\\
+
+\vspace{3.5in}
+
+
+Geometric meaning:
+
+
+\pagebreak
+
+EXAMPLE:\\
+
+Find a value of $x^*$ in $[0,\pi]$ so that $\int_0^{\pi}\sin{x} \, dx = \pi\sin{x^*}$.
+
+\vspace{2.5in}
+
+{\bf Mean Value Theorem for Integrals} \\
+
+If $f$ is a continuous function on $[a,b]$, then there exists a number $c$ in $[a,b]$ such that \\
+\begin{displaymath}
+\int_a^b f(x) \, dx = f(c)(b-a)
+\end{displaymath}  
+
+\vspace{1.7in}
+
+  EXAMPLE:\\
+
+  Find the value of $c$ described in the theorem for $f(x) = e^x $ on the interval $[-1,3]$.
+
+
+
+\end{document}
+
+

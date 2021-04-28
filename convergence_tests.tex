@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Convergence tests}
+\\
+
+
+\end{center}
+
+ {\bf Test for Divergence:}  If $\lim_{n\to\infty}a_n \neq 0$, then $\sum_{n=1}^{\infty} a_n $ diverges.\\
+
+ \vspace{0.1in}
+
+ {\bf Integral Test:}  \\
+Suppose that $f$ is a continuous, positive, decreasing function on $[1,\infty)$
+  and that $a_n = f(n)$.
+
+Then $\int_1^{\infty}f(x)\, dx$  and $\sum_1^{\infty}a_n$ either both converge or both diverge.
+
+\vspace{0.1in}
+
+{\bf Comparison Test:}  \\
+
+Suppose that $\sum a_n$ and $\sum b_n$ are series with positive terms.
+If $\sum b_n$ converges and $a_n \leq b_n$ for all $n$, then $\sum a_n$ also converges.
+If $\sum b_n$ diverges and $a_n \geq b_n$ for all $n$, then $\sum a_n$ also diverges.
+
+
+\vspace{0.1in}
+{\bf Limit Comparison Test:}  \\
+
+Suppose that $\sum a_n$ and $\sum b_n$ are series with positive terms. If $\lim_{n\to \infty}\frac{a_n}{b_n} = c$
+where $c$ is a finite number that is \emph{not zero}, the either both series converge or both diverge.
+
+\vspace{0.1in}
+
+{\bf Alternating Series Test:}  \\
+
+If the alternating series $\sum_0^{\infty}(-1)^{n-1}b_n$ with $b_n\geq 0$
+  satisfies $b_{n+1}\leq b_n $ for large $n$ and $\lim_{n\to \infty}b_n = 0$,
+  then the series converges.\\
+
+  \vspace{0.1in}
+
+  {\bf Ratio Test:}  \\
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\left|\frac{a_{n+1}}{a_n}\right| = L < 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{converges absolutely.}
+  \end{displaymath}
+    \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\left|\frac{a_{n+1}}{a_n}\right| = L > 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{diverges.}
+      \end{displaymath}
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\left|\frac{a_{n+1}}{a_n}\right| = 1 \,, \mbox{then the Ratio Test is inconclusive.}
+      \end{displaymath}
+
+{\bf Root Test:}  \\
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\sqrt[n]{|a_n|} = L < 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{converges absolutely.}
+  \end{displaymath}
+    \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\sqrt[n]{|a_n|} = L > 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{diverges.}
+      \end{displaymath}
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\sqrt[n]{|a_n|} = 1 \,, \mbox{then the Root Test is inconclusive.}
+      \end{displaymath}
+
+
+\end{document}
+
+

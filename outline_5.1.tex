@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 5.1:  The Area Problem}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+Our goal is to determine a way to calculate areas that are enclosed by curved boundaries.  Our starting point is an area
+defined by $a \leq x \leq b$, and $0 \leq y \leq f(x)$  where $f$ is a positive function.\\
+
+\vspace{2.2in}
+
+
+How should we define the area?  What do we really \emph{know} about area? \\
+
+\vspace{1.in}
+
+
+(EXAMPLE) \\
+
+Determine the area defined by $ 0 \leq x \leq 1$  and $0 \leq y \leq 1-x^2$
+
+\vspace{2.5in}
+
+
+       {\bf Idea:} Divide the area into pieces and estimate the area of each piece with a simple shape.
+
+
+       
+\pagebreak
+{\bf $L_2$:} Area of 2 rectangles with height determined by the function value on the left side.       
+       
+\vspace{2.5in}
+
+{\bf $L_4$:} Area of 4 rectangles with height determined by the function value on the left side.       
+
+\vspace{2.5in}
+
+
+{\bf $L_8$:} Area of 8 rectangles with height determined by the function value on the left side.       
+
+\vspace{1.5in}
+
+What happens as the number of rectangles gets larger?
+
+
+\pagebreak
+
+Another possibility:\\
+
+{\bf $R_2$:} Area of 2 rectangles with height determined by the function value on the left side.       
+       
+\vspace{2.5in}
+
+{\bf $R_4$:} Area of 4 rectangles with height determined by the function value on the left side.       
+
+\vspace{1.5in}
+
+What happens as the number of rectangles gets larger?
+
+\vspace{1.5in}
+
+{\bf Idea:} It may be possible to define the area as a limit on the area as the number of rectangles grows!
+
+\vspace{.5in}
+Formula for $L_N$:
+
+\pagebreak
+
+
+Handy formula:  $1^2 + 2^2 + 3^2 + ... + M^2 = \frac{M(M+1)(2M+1)}{6}$
+
+\vspace{3.5in}
+
+$ A = \lim_{N\to\infty}L_N$ 
+
+\vspace{2.5in}
+
+
+(EXERCISES)\\
+\begin{enumerate}
+\item{Find a formula for $R_N$ and calculate $\lim_{N\to\infty}R_N$.  You will get the same number}
+\item{Repeat the general procedure to find the area bounded defined by $0\leq x \leq 2$ and $0 \leq y \leq x^3$\\
+You will need a handy formula $1^3 + 2^3 + 3^3 + ... + M^3 = \frac{M^2(M+1)^2}{4}$.}
+\end{enumerate}
+
+\pagebreak
+
+
+\begin{center}
+\Large
+\rm{Sigma (Summation) Notation}
+\\
+\end{center}
+Sigma notation is a compact way to write sums of numbers when there is a pattern in the numbers.
+\begin{displaymath}
+\sum_{i=m}^na_i = a_m + a_{m+1} + ... + a_{n-1} + a_n
+  \end{displaymath}
+\vspace{0.2in}
+
+(EXAMPLES)\\
+$\sum_{i=1}^4 i^2$ \\
+
+  \vspace{0.2in}
+  $\sum_{i=3}^7 i$\\
+  
+  \vspace{0.2in}
+  $\sum_{i=0}^5 2^1$\\
+  
+  \vspace{0.2in}
+$\sum_{i=2}^6 3 $ \\
+
+    \vspace{0.2in}
+
+    (NOTES)\\
+
+    \vspace{3in}
+
+
+    Writing $L_N$ and $R_N$ from the previous example.
+
+
+\end{document}
+
+

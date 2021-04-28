@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{1in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 7.4:  Partial Fractions}
+\\
+\end{center}
+\vspace{0.2in}
+
+The goal of this section is to integrate rational functions (ratios of polynomials).\\
+
+\vspace{2in.}
+
+
+EXAMPLE:\\
+
+$\frac{1}{x+2} + \frac{3}{x-1}$
+
+\vspace{2in.}
+
+{\bf Partial fractions} is an algebraic method that reverses the addition of rational functions.\\
+
+EXAMPLE:\\
+
+$\int \frac{4x-3}{x^2+3x} \, dx$
+
+
+\pagebreak
+
+Partial fractions works in general by proposing a possible decomposition with unknown constants, and then applying algebra to
+solve for the constants.  We can break down the study of partial fractions into cases that depend on how the denominator factors.\\
+
+CASE I: Denominator factors into a number of distinct linear factors.\\
+
+EXAMPLES:\\
+
+$\int \frac{2x+6}{x^2-5x+6} \, dx$
+
+\vspace{3in}
+
+$\int \frac{x^2+1}{x^3-2x^2-3x} \, dx$
+
+\vspace{2in}
+
+\pagebreak
+
+CASE II: Denominator factors into a number of linear factors that are not all distinct.\\
+
+EXAMPLES:\\
+
+$\int \frac{x-1}{x^2(x+2)} \, dx$
+
+\vspace{4in}
+
+$\int \frac{1}{(x^2-1)^2} \, dx$
+
+
+\pagebreak
+
+CASE III: Denominator factors into linear factors and distinct irreducible quadratic factors.\\
+
+EXAMPLES:\\
+
+$\int \frac{1}{(x-1)(x^2+5)} \, dx$
+
+\vspace{3.5in}
+
+$\int \frac{x-1}{(x+2)(3x^2+1)} \, dx$
+
+
+\pagebreak
+
+$\int \frac{4x^2-x+1}{(x^2+2x+2)(x-3)} \, dx$
+
+
+
+\vspace{6in}
+
+
+In general the simplest integrals we will get in these three cases have the following forms:\\
+
+$\int \frac{A}{x-a} \, dx$ \hspace{1in} $\int \frac{A}{(x-a)^n} \, dx$ \hspace{1in} $\int \frac{Ax+B}{ax^2+bx+c} \, dx$
+
+
+\pagebreak
+
+EXAMPLES: IMPROPER RATIONAL FUNCTIONS\\
+
+$\int \frac{2x^3+x}{x^2-x} \, dx$
+
+\vspace{3.5in}
+
+
+$\int \frac{x^3+4x^2+x-1}{x^3+x^2} \, dx$
+%% \pagebreak
+
+%% The steps to follow to evaluate integrals of rational functions:
+
+%% \begin{enumerate}
+%% 	\item {Do long division first if degree of numerator is greater or equal to degree of denominator.}
+%% 	\item{Factor denominator if possible and decide which case applies.}
+%% 	\item{Carry out algebra to find the unknown constants.}
+%% 	\item{Evaluate the integrals of the simpler functions.}
+%% \end{enumerate}
+
+
+\end{document}
+
+

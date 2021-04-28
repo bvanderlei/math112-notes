@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 5.4:  Indefinite Integrals and Net Change}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Indefinite integrals} are a notation for antiderivatives.
+
+
+\vspace{3in}
+
+
+NOTES:  \\
+
+\begin{enumerate}
+
+\item{Definte integrals are numbers, indefinite integrals are functions.}
+
+  \vspace{1in.}
+
+\item{Fundamental Theorem connects definite and indefinite integrals.}
+
+  \vspace{1in.}
+  
+\item{Indefinite integrals represent a family of functions.}
+
+    \vspace{1in.}
+
+    \end{enumerate}
+
+
+\pagebreak
+
+    EXAMPLES: \\
+    
+ $\int \sec^2{\theta} \, d\theta$
+
+    \vspace{1in}
+
+   
+$\int \frac{2}{x}+  \frac{x}{8}\, dx$
+    
+    
+    \vspace{1in}
+
+        $\int \frac{\sin{t}}{\cos^2{t}} \, dt$
+
+    \vspace{1in}
+
+{\bf Net Change Theorem} (FTC Part II)\\
+
+The integral of a rate of change equals the net change.
+
+\begin{displaymath}
+\int_a^bF'(x) = F(b)-F(a)
+\end{displaymath}
+
+\vspace{.5in}
+
+EXAMPLES:\\
+
+\begin{enumerate}
+\item{Let $V(t)$ be the volume of water in a tank as a function of time.  Then $\int_a^b\frac{dV}{dt} \,dt = \Delta V$.}
+
+\pagebreak
+
+\item{A colony of bactera starts at population 100 and grows at rate of $200e^t$ bactera/hr.  What is the population after 4 hours?}
+
+  \vspace{2.5in.}
+
+  
+\item{ If $x(t)$ represents the position of an object, and $v(t) = x'(t)$ its velocity, then $\int_a^bv(t)\, dt$ calculates the displacement from time $a$ to time $b$.  Suppose $v(t)=3t^2-24t+36$  m/s.
+  \begin{enumerate}
+  \item{What is the displacement during the interval $[0,2]$?}
+    
+    \vspace{1.2in.}
+
+  \item{What is the displacement during the interval $[0,6]$?}
+
+    \vspace{1.2in.}
+
+  \item{What is the distance traveled during the interval $[0,6]$?}
+\end{enumerate}
+}
+\end{enumerate}
+
+
+\pagebreak
+\begin{center}
+\Large
+\rm{Chapter 5.5:  The Substitution Rule}
+\\
+\end{center}
+\vspace{0.2in}
+In order to compute antiderivatives, we will need to use differentiation rules in reverse.\\
+
+Chain Rule review:  Differentiate the following functions
+
+\begin{displaymath}
+h(x) = (x^2+4x^4)^{10}  \hspace{1in} p(t) = \ln{(\tan{t})}  \hspace{1.in} y(u) = \arctan{e^u} 
+  \end{displaymath}
+
+\vspace{2.5in}
+
+
+
+
+Evaluate the integral $\int 2x\sqrt{1+x^2}\, dx $.
+
+\vspace{3in}
+
+
+{\bf Substitution Rule} \\
+
+\begin{displaymath}
+\int f(g(x))g'(x) \, dx = \int f(u) \, du
+  \end{displaymath}
+
+
+
+
+\pagebreak
+
+MANY EXAMPLES:\\
+
+
+$\int x^2e^{x^3}\, dx$
+
+\vspace{1.5in}
+
+$\int \frac{x}{\sqrt{1-4x^2}}\, dx$
+
+\vspace{1.5in}
+
+$\int e^{2x}\cos{e^{2x}} \, dx$
+
+\vspace{1.5in}
+
+$\int (3w+1)^3 \, dw$
+
+
+\vspace{1.5in}
+
+$\int \tan{\theta} \, d\theta$
+
+\pagebreak
+
+
+$\int_0^4 \sqrt{4+3x} \, dx$
+
+\vspace{2in}
+
+$\int_0^{\sqrt{\pi}} t\sin{t^2} \, dt$
+
+\vspace{1.5in}
+
+$\int_0^{\ln{3}} \frac{e^x}{1+e^x} \, dx$
+
+\vspace{1.5in}
+
+
+$\int_1^{e^{2}} \frac{\ln{x}}{x} \, dx$
+
+\vspace{1.5in}
+
+$\int_3^{4} \frac{dx}{(x-2)^2} $
+
+
+\end{document}
+
+

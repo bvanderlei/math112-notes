@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 9:   Population Models}
+\\
+\vspace{0.2in}
+
+\end{center}
+
+{\bf Schaefer model}\\
+Let $P(t)$ represent a population of fish and consider the following model for the description of harvesting from a population that is
+growing that undergoes logistic growth.
+\begin{displaymath}
+\frac{dP}{dt} = kP\left(1-\frac{P}{M}\right) - EP \\
+\end{displaymath}
+This model assumes that at a given level of effort, $E$, the rate at which fish are caught is directly proportional to the current size of the
+population.  
+
+\begin{enumerate}
+\item{If $E<k$, there are two equilibrium solutions, $P_1$ and $P_2$. $P_1=0$.  Find $P_2$ and predict what will happen to the fish population.}
+\item{Does the survival of the population depend on the initial condition?}
+\item{Calculate the yield $Y = EP_2$.  This is the amount of fish that may be harvested indefinitely while the population remains stable.}
+\item{Find the value of $E$ that gives the maximum sustainable yield $Y$.}
+\end{enumerate}
+
+
+{\bf Gompertz Model}\\
+Let $P(t)$ represent a population of cells and consider the following differential equation.  
+\begin{displaymath}
+\frac{dP}{dt} = -rP\ln{\left(\frac{P}{K} \right)} \\
+\end{displaymath}
+This equation is known as the Gompertz model.  Here $r$ and $K$ are positive constants that you will need to interpret.  
+
+\begin{enumerate}
+\item{Find any equilibrium solutions.}
+
+\item{Draw a slope field for the equation.  It may be helpful to plot the rate function in terms of $P$ first as we did for the logistic equation.  What happens to the rate function as $P$ goes to zero?  What happens as $P$ nears an equilibrium?}
+
+\item{What is the max growth rate and where does it occur? (What value of $P$?) }
+
+\item{What is the average growth rate of the population over its range of sizes (zero to equilibrium)? }
+
+\item{Solve the equation using separation of variables and an initial size of $P_0$.}
+
+\item{How is the the Gompertz model similar to the logistic model for population growth?}
+
+\item{How are the two models different?}
+
+\end{enumerate}
+
+
+\pagebreak
+    {\bf Doomsday equation}\\
+    This one is just for fun.  What would happen if the \emph{per capita} growth rate of a population
+    was proportional to the population?   This would give the following initial value problem.
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+ \frac{dP}{dt} = kP^2\\
+P(0) = P_0 \\
+\end{array} \right.
+\end{displaymath}
+\begin{enumerate}
+\item{Find the solution and show that the model predicts the population going to infinity in a \emph{finite} time.}
+\item{Does the prediction depend on the initial population $P_0$?  Does it depend on $k$?}
+\end{enumerate}
+
+    
+{\bf Lotka-Volterra model}\\
+Let $P(t)$ be the population of a prey species, and $R(t)$ be the population  of a predator species that feeds on the prey species.  One model 
+for these two interacting species is the following set of ``predator-prey'' equations
+\begin{displaymath}
+\left\{ \begin{array}{ll}
+\frac{dP}{dt} = 0.08P-0.001PR \\
+\\
+\frac{dR}{dt} = -0.02R+0.00002RW
+\end{array} \right.
+\end{displaymath}
+\begin{enumerate}
+\item{Describe what happens to the prey population in the absence of the predators.}
+\item{Describe what happens to the predator population in the absence of the prey.}
+\item{What are all of the possible equilibriums of this system of equations?  Equilibria are now pairs of values $(P,R)$ that are constant solutions.}
+\item{Determine how each of the populations is changing when there are 500 prey and 50 predators.}
+\item{Determine how each of the populations is changing when there are 3000 prey and 50 predators.}
+\item{Since $t$ is not invoved explicitly, we could sketch a slope field in the $PR$-plane.  At each point $(P,R)$ we can sketch an arrow determined by $P'$ and $R'$.  Try it.}
+\end{enumerate}
+
+\end{document}
+
+

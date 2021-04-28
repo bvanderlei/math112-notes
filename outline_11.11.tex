@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.11:  Taylor Polynomials\\
+  (Applications of Taylor Series)}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+\vspace{0.2in}
+
+Use the Remainder estimate to the difference between $f(x) = \sin{x}$ and $T_3(x)$ for $x$ in $[-\pi/2,\pi/2]$.
+
+\vspace{2.5in}
+
+Use the Remainder estimate to the difference between $f(x) = \sin{x}$ and $T_5(x)$ for $x$ in $[-\pi/2,\pi/2]$.
+
+\vspace{1.2in}
+Find $T_3(x)$ for $f(x) = x\ln{x}$ at $a=1$.  Estimate the difference between $f(x)$ and $T_3(x)$ for \\$|x-1|<0.5$.
+
+
+\pagebreak
+Find $T_3(x)$ for $\sqrt{x}$ at $a=4$ and use it to estimate $\sqrt{4.3}$. Estimate the error in the approximation.\\
+
+
+\vspace{3.5in}
+
+
+Write the Maclaurin series for Erf$(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\, dt$.
+
+\vspace{3in}
+
+If we want to estimate Erf$(0.8)$, how many terms of the series will we need to use?  
+
+
+\pagebreak
+Show that the function represented by the power series 
+\begin{displaymath}
+J(x) = \sum_{n=0}^{\infty} \frac{(-1)^{n}x^{2n}}{2^{2n}(n!)^2}
+\end{displaymath}
+is a solution to Bessel's equation $x^2J''(x) + xJ'(x) + x^2J(x) = 0$.\\
+
+\vspace{3.5in}
+
+Find a Maclaurin series for the solution to the initial value problem
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+y'(x) = 3y(x) \\
+y(0) = 8 \\
+\end{array} \right.
+\end{displaymath}
+(Let $y(x) = \sum_0^{\infty}c_nx^n$ and substitute it into the the problem to find $c_n$.)
+
+
+\end{document}
+
+
+
+

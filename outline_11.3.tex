@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.2:  Integral Test}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Integral Test:}  \\
+Suppose that $f$ is a continuous, positive, decreasing function on $[1,\infty)$
+  and that $a_n = f(n)$.
+  \begin{displaymath}
+\mbox{If} \int_1^{\infty}f(x)\, dx \, \mbox{converges}, \mbox{then} \sum_1^{\infty}a_n \, \mbox{converges.}
+      \end{displaymath}
+  \begin{displaymath}
+\mbox{If} \int_1^{\infty}f(x)\, dx \, \mbox{diverges}, \mbox{then} \sum_1^{\infty}a_n \, \mbox{diverges.}
+      \end{displaymath}
+
+  \vspace{0.5in}
+
+  EXAMPLES:\\
+
+$\sum_{n=1}^{\infty} \frac{1}{n}$\quad (Harmonic Series)
+
+\pagebreak
+
+$\sum_{n=1}^{\infty}  \frac{1}{n^2}$
+
+\vspace{3.5in}
+
+$\sum_{n=1}^{\infty}  \frac{1}{n^p}$ \quad ($p$-series)\\
+
+\vspace{1in}
+
+$\sum_{n=2}^{\infty} \frac{\ln{n}}{n} $
+
+\pagebreak
+
+$\sum_{n=1}^{\infty} ne^{-n} $
+
+\vspace{2in}
+
+$\frac13 + \frac18 + \frac{1}{13} + \frac{1}{18} + ....$
+
+\vspace{2in}
+
+{\bf Remainder Estimate for the Integral Test:}  \\
+
+Suppose $f(k)=k$, where f is continuous, positive, and decreasing for $x\ge n$ and $\sum a_n$ is convergent.
+Let $R_n = s - s_n$ be the remainder. Then
+
+\begin{displaymath}
+\int_{n+1}^{\infty}f(x) \, dx  \leq R_n \leq \int_n^{\infty} f(x) \, dx
+  \end{displaymath}
+
+\vspace{1.75in}
+
+\pagebreak
+
+EXAMPLES: \\
+
+How close is $\sum_1^{15}\frac{1}{n^3}$ to $\sum_1^{\infty}\frac{1}{n^3}$?
+
+\vspace{1.5in}
+
+How large should $N$ be so that $\sum_1^{\infty}\frac{1}{n^3}- \sum_1^{N}\frac{1}{n^3} < 0.0001$?
+
+\vspace{1.5in}
+
+How large should $N$ be so that $\sum_2^{\infty}\frac{1}{n(\ln{n})^2}- \sum_1^{N}\frac{1}{n(\ln{n})^2} < 0.01$?
+
+\pagebreak
+
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.4:  Comparison Tests}
+\\
+\end{center}
+
+{\bf Comparison Test:}  \\
+
+Suppose that $\sum a_n$ and $\sum b_n$ are series with positive terms.
+\begin{enumerate}
+\item{If $\sum b_n$ converges and $a_n \leq b_n$ for all $n$, then $\sum a_n$ also converge.}
+  \item{If $\sum b_n$ diverges and $a_n \geq b_n$ for all $n$, then $\sum a_n$ also diverges.}
+\end{enumerate}
+
+\vspace{0.2in}
+
+EXAMPLES:\\
+
+$\sum_{n=1}^{\infty} \frac{\ln{n}}{n} $
+
+\vspace{1.5in}
+
+$\sum_{n=1}^{\infty} \frac{1}{5^n + 2} $
+
+\vspace{1.5in}
+
+$\sum_{n=1}^{\infty} \frac{1}{n^2 + n^3} $
+
+\vspace{1.5in}
+
+$\sum_{n=1}^{\infty} \frac{\cos^2{n}}{3^n} $
+
+
+\pagebreak
+
+$\sum_{n=1}^{\infty} \frac{1}{5^n - 2} $
+
+\vspace{1.5in}
+
+{\bf Limit Comparison Test:}  \\
+
+Suppose that $\sum a_n$ and $\sum b_n$ are series with positive terms. If
+\begin{displaymath}
+\lim_{n\to \infty}\frac{a_n}{b_n} = c
+  \end{displaymath}
+where $c$ is a finite number that is \emph{not zero}, the either both series converge or both diverge.
+
+\vspace{0.25in}
+
+EXAMPLES:\\
+
+$\sum_{n=1}^{\infty} \frac{1}{5^n - 2} $
+
+\vspace{1.5in}
+
+$\sum_{n=0}^{\infty} \frac{1}{4 + \sqrt{n}} $
+
+\vspace{1.5in}
+
+$\sum_{n=0}^{\infty} \frac{2^n}{8 + 3^n} $
+
+\vspace{1.5in}
+
+$\sum_{n=1}^{\infty} \frac{\sqrt{n^4+ 3n}}{5n^3+2} $
+
+\vspace{1.5in}
+
+EXERCISES: (Use a test to determine if the series converge.) \\
+
+$\sum_{n=0}^{\infty} \frac{1+ \sin{n}}{10^n} $
+
+\vspace{1in}
+
+$\sum_{n=1}^{\infty} \frac{1}{n^n} $
+
+\vspace{1in}
+
+$\sum_{n=0}^{\infty} \frac{1+ e^n}{1 + ne^n} $
+
+\vspace{1in}
+
+$\sum_{n=1}^{\infty} \frac{n+2}{3n+4} $
+
+\vspace{1in}
+
+$\sum_{n=1}^{\infty} \sin{\left(\frac1n\right)}$
+
+\end{document}
+
+
+
+

@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.6:  Root and Ratio Tests}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Ratio Test:}  \\
+
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\left|\frac{a_{n+1}}{a_n}\right| = L < 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{converges absolutely.}
+  \end{displaymath}
+    \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\left|\frac{a_{n+1}}{a_n}\right| = L > 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{diverges.}
+      \end{displaymath}
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\left|\frac{a_{n+1}}{a_n}\right| = 1 \,, \mbox{then the Ratio Test is inconclusive.}
+      \end{displaymath}
+
+  \vspace{0.2in}
+
+ EXAMPLES:\\
+
+ $\sum_{n=1}^{\infty} \frac{n^2}{5^n}$
+
+ \vspace{1.5in}
+ 
+ $\sum_{n=1}^{\infty} \frac{(-1)^{n-1}2^n}{n^n}$
+
+
+ \vspace{1.5in}
+ 
+ $\sum_{n=1}^{\infty} \frac{n^{10}8^n}{n!}$
+
+ \pagebreak
+
+  $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}n}{\sqrt{n^3+2}}$
+
+
+ \vspace{3in}
+
+$\frac14 + \frac14\cdot\frac57 +  \frac14\cdot\frac57\cdot\frac{9}{10} + $
+
+
+\vspace{2.5in}
+
+
+$\sum_{n=2}^{\infty} \frac{(-1)^{n-1}}{n\ln{n}}$
+
+\pagebreak
+
+{\bf Root Test:}  \\
+
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\sqrt[n]{|a_n|} = L < 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{converges absolutely.}
+  \end{displaymath}
+    \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\sqrt[n]{|a_n|} = L > 1 \,, \mbox{then } \sum_1^{\infty}a_n \, \mbox{diverges.}
+      \end{displaymath}
+  \begin{displaymath}
+\mbox{If} \lim_{n\to \infty}\sqrt[n]{|a_n|} = 1 \,, \mbox{then the Root Test is inconclusive.}
+      \end{displaymath}
+
+  \vspace{0.2in}
+  
+  EXAMPLES:\\
+
+  $\sum_{n=1}^{\infty} \frac{(-1)^{n-1}2^n}{n^n}$
+
+  \vspace{2in}
+  
+    $\sum_{n=1}^{\infty} \left(\frac{3n}{2n+1}\right)^{4n}$  
+
+\pagebreak
+
+    $\sum_{n=1}^{\infty} \left(\frac{n}{\ln{n}}\right)^{2n}$  
+
+
+\vspace{2in}
+
+    $\sum_{n=1}^{\infty} \frac{(3n+1)^n}{n^{2n}}$  
+
+\vspace{2in}
+
+    $\sum_{n=1}^{\infty} \left(1 + \frac{1}{n}\right)^{n^2}$  
+
+\end{document}
+
+
+
+

@@ -1,0 +1,174 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{1in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 7.7: Numerical Integration.}
+\\
+\end{center}
+\vspace{0.2in}
+
+The goal of this section is to approximate the value of definite integrals by using finite sums.\\
+
+
+EXAMPLE:\\
+
+erf$(x) = \frac{2}{\sqrt{\pi}}\int_0^xe^{-t^2}\, dt$ \quad  Suppose we want to know erf(1).
+
+\vspace{0.2in}
+
+Estimate $\int_0^1e^{-x^2}\, dx$ using $L_4$, $R_4$, and $M_4$ \\
+
+\vspace{2in}
+
+It would be even more useful if we could bound the difference $\left|L_4-\int_0^1e^{-x^2}\, dx\right|$\\
+
+We could then ask what size of $N$ do we need to make $L_N$ ``good enough''
+
+
+
+\pagebreak
+
+
+If we want a more accurate approximation, we might try using shapes other than rectangles.  Estimate $\int_0^1e^{-x^2}\, dx$ using 4 trapezoids.  Call this $T_4$. \\
+
+\vspace{4in.}
+
+
+{\bf Trapezoid Rule} $T_N$
+\begin{displaymath}
+\int_a^bf(x)\,dx \approx  \frac{\Delta x}{2}\left[f(x_0) + 2f(x_1) + 2f(x_2) + .... + 2f(x_{N-1}) + f(x_N)\right]
+\end{displaymath}
+
+\vspace{1cm}
+
+COMPARISON OF APPROXIMATIONS \\
+
+We can compare the different approximations by looking at the errors.  Define  the error in using the Midpoint rule as \\
+\begin{displaymath}
+E_M = \int_a^bf(x) \, dx - M_N
+\end{displaymath}
+We can define $E_L$, $E_R$, and $E_T$ similarly.
+
+\pagebreak
+
+To get a sense of the errors, we can approximate the value of a known integral, $\int_1^3\frac{1}{x} \, dx$.\\
+
+Several calculations by computer gives us...\\
+
+\vspace{0.3cm}
+
+\begin{tabular}{|c|c|c|c|c|}\hline
+$N$ & $E_L$ & $E_R$ & $E_T$ & $E_M$\\
+\hline
+5 & -0.1449 & 0.121678 & -0.01165 & 0.005755 \\
+10 & -0.06962 & 0.063716 & -0.00295 & 0.00147 \\
+20 & -0.03407 & 0.032593 & -0.00074 & 0.00037 \\
+\hline
+\end{tabular}
+\vspace{0.2in}
+
+We notice some trends...
+
+\begin{enumerate}
+\item{}
+\item{}
+\item{}
+\item{}
+  \end{enumerate}
+
+\vspace{0.2in}
+
+ERROR BOUNDS\\
+
+For the Midpoint Rule and Trapezoid rule we have the following formula to estimate the error
+\begin{displaymath}
+|E_M| \leq \frac{K(b-a)^3}{24N^2} \quad\quad |E_T| \leq \frac{K(b-a)^3}{12N^2}
+\end{displaymath}
+where $K$ is a number such that $|f''(x)| < K$ when $x$ is in the interval $[a,b]$.
+
+\vspace{0.3cm}
+
+EXAMPLES:\\
+
+Again consider the integral  $\int_1^3\frac{1}{x} \, dx$.
+
+\begin{enumerate}
+\item{If $N=20$, what is the largest that $|E_T|$ could be?  How about $|E_M|$?}
+  \item{How large would $N$ need to be if we want $|E_M|< 0.0001$?}
+  \end{enumerate}
+
+
+
+
+\pagebreak
+
+Estimate the error $E_T$ in the approximation $T_8$ for the following integral.
+\begin{displaymath}
+\int_0^1\cos{x^2} \,dx 
+\end{displaymath}
+
+\vspace{5in}
+
+EXERCISE:
+Consider the following integral:
+\begin{displaymath}
+\int_0^{\pi}\sin{x} \,dx 
+\end{displaymath}
+\begin{enumerate}
+\item{Find $M_{10}$, and $T_{10}$, and the corresponding errors $E_M$, and $E_T$.}
+\item{Compute the error bounds using the formulas and then compare them with the true errors $E_M$, and $E_T$.}
+\item{How large do we have to choose $N$ so that $|E_T| < 0.00001$? Use the error bound formula.}
+\end{enumerate}
+
+
+\pagebreak
+
+If we want to make a more accurate approximation for a fixed $N$, we might approximate area with different shapes.  {\bf Simpson's Rule} uses parabolas to approximate a function $f$, and then estimates the integral of $f$ by using integrals of quadratic functions.
+
+\vspace{6in}
+
+{\bf Simpson's Rule}
+\begin{displaymath}
+\int_a^bf(x)\,dx \approx S_N = \frac{\Delta x}{3}\left[f(x_0) + 4f(x_1) + 2f(x_2) +  4f(x_3) + .... + 2f(x_{N-2}) + 4f(x_{N-1}) + f(x_N)\right]
+\end{displaymath}
+where $N$ {\bf is an even integer.}
+
+\pagebreak
+
+For Simpson's Rule we have a similar formula to estimate the error
+\begin{displaymath}
+|E_S| \leq \frac{K(b-a)^5}{180N^4} 
+\end{displaymath}
+where $K$ is a number such that $|f''''(x)| < K$ when $x$ is in the interval $[a,b]$.
+
+\vspace{0.5cm}
+
+EXAMPLE:\\
+
+For the integral $\int_1^3 \frac{1}{x} \, dx$  how large do we have to choose $N$ so that $|E_S| < 0.0001$? 
+
+\vspace{5in}
+EXERCISE:
+Consider the following integral:
+\begin{displaymath}
+\int_0^{\pi}\sin{x} \,dx 
+\end{displaymath}
+\begin{enumerate}
+\item{Find $S_{10}$ and the corresponding error $E_S$.}
+\item{Compute the error bound using the formula and then compare them with the true error $E_S$.}
+\item{How large do we have to choose $N$ so that $|E_S| < 0.00001$?  Use the error bound formula.}
+\end{enumerate}
+
+\end{document}
+
+

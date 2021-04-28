@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.10:  Taylor Series}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+THEOREM: \\
+
+If $f$ has a power series representation at $a$, 
+
+\begin{displaymath}
+f(x) =\sum_{n=0}^{\infty}c_n(x-a)^n  \hspace{0.7in} |x-a|<R
+  \end{displaymath}
+then the coefficients are given by the formula
+\begin{displaymath}
+c_n=\frac{f^{(n)}(a)}{n!}
+  \end{displaymath}
+
+\vspace{0.2in}
+
+EXAMPLE:\\
+
+$f(x) = e^x$ and $a=0$
+
+\vspace{3in}
+
+When we write the series with this formula, we call it a  {\bf Taylor series}.\\
+
+\begin{displaymath}
+f(x) = f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + .... 
+  \end{displaymath}
+
+and when $a=0$ we call it a {\bf Maclaurin series}.\\
+
+\begin{displaymath}
+f(x) = f(0) + \frac{f'(0)}{1!}x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3 + .... 
+  \end{displaymath}
+
+
+\pagebreak
+
+When we use only a finite number of terms, we call the sum a {\bf Taylor polynomial}.\\
+
+\vspace{3in}
+
+
+We can use the Maclaurin series for $e^x$ to construct series of related functions.\\
+
+
+EXAMPLES:\\
+
+Find the Maclaurin series for the following functions.\\
+
+$g(x) = e^{-x}$
+
+\vspace{1.5in}
+
+$h(x) = x^2e^{2x}$
+
+\vspace{1.5in}
+
+$f(x) = e^{-(x-2)}$
+
+\pagebreak
+We can make different Taylor series for the same function \emph{centered} at different $a$.\\
+
+EXAMPLE:\\
+
+$f(x) = e^x$ at $a=4$.
+
+ \vspace{4.5in}
+
+
+ 
+ THEOREM: \\
+
+ Let $R_N = f(x) - T_N(x)$, and let $M$ be number such that $|f^{n+1}(x)|\leq M$ for $|x-a|\leq d$.
+ Then the remainder $R_N(x)$ satisfies
+
+ \begin{displaymath}
+|R_N(x)| \leq \frac{M}{(N+1)!}|x-a|^{N+1} \hspace{1in} \mbox{for} |x-a|<d
+    \end{displaymath}
+
+ \pagebreak
+
+ EXAMPLE:\\
+ 
+ $f(x) = e^x$ and $a=0$
+
+\vspace{4in}
+
+ MORE EXAMPLES:\\
+
+ Find the Maclaurin series for $\sin{x}$.
+
+ \pagebreak
+
+  Find the Maclaurin series for $\cos{x}$.
+
+  \vspace{4in}
+
+  Find the Taylor series for $\cos{x}$ at $a=\pi/2$.
+
+\pagebreak
+  
+  Find the Taylor series for $2^{x}$ at $a=3$.\\
+
+  \vspace{4in}
+  
+
+
+  
+  Find the Taylor series for $x^3+2x-1$ at $a=1$.
+
+\pagebreak
+
+
+  Find the Maclaurin series for $\ln(x+1)$. \\
+   (\emph{Note we've found this series already using the geometric series.})
+
+ \vspace{3.5in}
+
+As before, we can find other series by manipulating series we know.\\
+
+Find the first few terms in the Maclaurin series for $e^x\sin{x}$.\\
+
+ \vspace{2in}
+
+Find the first few terms in the Maclaurin series for $\tan{x}$.\\
+
+%\pagebreak
+%
+%  APPLICATIONS:  (Integrals and Erf, approximations (sqrt and ln), de, limits?)
+%  
+%Find $T_3(x)$ for $\sqrt{x}$ at $a=4$ and use it to estimate $\sqrt{4.3}$ Estimate the error in the approximation.
+%
+%
+%\vspace{1in}
+% \pagebreak
+
+\end{document}
+
+
+
+

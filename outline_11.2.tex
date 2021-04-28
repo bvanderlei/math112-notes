@@ -1,0 +1,190 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.2:  Series}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+
+A {\bf series} is an infinite sum of numbers.\\
+
+\begin{displaymath}
+\sum_{n=1}^{\infty} a_n
+  \end{displaymath}
+
+\vspace{.3in}
+
+
+
+EXAMPLES:\\
+
+
+$\sum_{n=1}^{\infty} \frac{1}{n}$
+
+\vspace{0.3in}
+
+$\sum_{n=2}^{\infty}  \frac{\ln{n}}{n^2}$
+
+\vspace{0.3in}
+
+$\sum_{n=0}^{\infty} \left(\frac12\right)^n $
+
+\vspace{0.3in}
+
+
+To understand if the series are finite, we define the sequence of {\bf partial sums} 
+
+\begin{displaymath}
+s_n = \sum_{k=0}^{n} a_k
+  \end{displaymath}
+\vspace{1.75in}
+
+If the limit of the $s_n$ exists we say that the series $\sum a_n$ {\bf converges}. \\
+If the limit of the $s_n$ does not exist we say that the series $\sum a_n$ {\bf diverges}.
+
+\pagebreak
+
+TELESCOPING SERIES\\
+
+\begin{displaymath}
+\sum_{n=1}^{\infty} \frac{1}{n(n+1)}
+  \end{displaymath}
+
+
+
+\vspace{2.5in}
+
+GEOMETRIC SERIES
+
+\begin{displaymath}
+\sum_{n=0}^{\infty} r^n 
+  \end{displaymath}
+
+\pagebreak
+
+EXAMPLES\\
+
+$20 + 5 + \frac54 + \frac{5}{16}+ ...$
+
+\vspace{2in}
+
+
+$6 + 9 + \frac{27}{2} + \frac{81}{4}+ ...$
+
+
+\vspace{2in}
+
+
+$\sum_{n=1}^{\infty}\frac{2^{n-3}}{5^n}$
+	
+	\vspace{2in}
+
+$1 - \frac17 + \frac{1}{7^2} - \frac{1}{7^3}+ ...$
+
+
+\vspace{2in}
+
+$\sum_{n=0}^{\infty}\frac{1}{\pi^n}$
+
+\vspace{1.5in}
+
+For what values of $x$ does the series converge?\\
+
+$\sum_{n=1}^{\infty}\frac{(x-3)^n}{5^n}$
+
+
+
+\vspace{2in}
+
+For what values of $x$ does the series converge?\\
+
+$\sum_{n=0}^{\infty}\left(\frac{2}{x}\right)^n$
+
+\vspace{2in}
+
+\pagebreak
+
+REPEATING DECIMAL EXPANSIONS \\
+
+\vspace{0.15in}
+
+
+Use a geometric series to find the fraction represented by 0.72727272....\\
+
+\vspace{2.5in}
+
+Use a geometric series to find the fraction represented by 0.135135...\\
+
+\vspace{3in}
+
+Use a geometric series to find the fraction represented by 0.999...\\
+
+
+\pagebreak
+
+GENERAL SERIES\\
+
+For most series, it is difficult or impossible to find a formula for the partial sums.  We will instead
+rely on a series of {\bf convergence tests}.  These tests are rules that we can apply to determine if a series converges. \\   
+
+\vspace{.25in}
+
+THEOREM: If the series $\sum_{n=1}^{\infty} a_n $ converges, then $\lim_{n\to\infty}a_n = 0$.\\
+
+\vspace{1in}
+ 
+ {\bf Test for Divergence:}  If $\lim_{n\to\infty}a_n \neq 0$, then $\sum_{n=1}^{\infty} a_n $ diverges.\\
+ 
+ \vspace{1in}
+ 
+ EXAMPLES:\\
+ 
+ $\sum_{n=1}^{\infty} \sqrt{n} $
+ 
+ \vspace{1in}
+ 
+  $\sum_{n=1}^{\infty} \frac{n^2}{2n^2+5} $
+ 
+ \vspace{1in} 
+ 
+ $\sum_{n=1}^{\infty} \frac{n}{\ln{n}} $
+ 
+ \vspace{1in} 
+ 
+ $\sum_{n=1}^{\infty} e^{1/n} $
+ 
+ \vspace{1in}
+ 
+ WARNING:  If $\lim_{n\to\infty}a_n = 0$, then $\sum_{n=1}^{\infty} a_n $ may converge \emph{or} diverge.\\
+ 
+ \vspace{.15in}
+ 
+ EXAMPLES:\\
+ 
+ $\sum_{n=1}^{\infty} \frac{1}{2^n} $
+ 
+  \vspace{1.5in}
+ 
+$\sum_{n=1}^{\infty} \frac{1}{n} $
+
+\vspace{1in}
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,121 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.5:  Alternating Series}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Alternating Series Test:}  \\
+
+If the alternating series 
+  \begin{displaymath}
+    \sum_1^{\infty}(-1)^{n-1}b_n = b_1 - b_2 + b_3 - b_4 + ... \hspace{1in} (b_n\geq 0)
+  \end{displaymath}
+  satisfies $b_{n+1}\leq b_n $ for large $n$ and $\lim_{n\to \infty}b_n = 0$
+  then the series converges.\\
+
+  \vspace{0.2in}
+
+ EXAMPLES:\\
+
+$\sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}$\quad (Alternating Harmonic Series)
+
+\pagebreak
+
+$\sum_{n=1}^{\infty} \frac{n^2(-1)^{n-1}}{n^3+1}$
+
+
+\vspace{2.5in}
+
+$\sum_{n=1}^{\infty} (-1)^{n+1}n^2e^{-4/n}$
+
+\vspace{2.5in}
+
+$\sum_{n=1}^{\infty} \frac{5n(-1)^{n-1}}{n^2+9}$
+
+\pagebreak
+
+{\bf Remainder Estimate for Alternating Series:}  \\
+
+If the alternating series
+  \begin{displaymath}
+    \sum_1^{\infty}(-1)^{n-1}b_n = b_1 - b_2 + b_3 - b_4 + ... \hspace{1in} (b_n\geq 0)
+  \end{displaymath}
+converges to a number $s$, and $R_n= s-s_n$ is the remainder, then $|R_n|\leq b_{n+1}$.\\
+
+EXAMPLES: \\
+
+How large can $R_{10}$ be for the series $\sum_1^{\infty}\frac{(-1)^{n+1}}{n!}$?
+
+\vspace{1.5in}
+
+How large should $N$ be so that $\sum_1^{\infty}\frac{(-1)^{n+1}}{n^3}- \sum_1^{N}\frac{(-1)^{n+1}}{n^3} < 0.0001$?
+
+\vspace{1.5in}
+
+How large should $N$ be so that $\sum_2^{\infty}\frac{(-\frac12)^{n+1}}{n}- \sum_2^{N}\frac{(-\frac12)^{n+1}}{n} < 0.005$?
+
+\pagebreak
+
+DEFINITIONS:  \\
+
+A series $\sum a_n$ is called {\bf absolutely convergent} if the series of absolute values $\sum|a_n|$ is convergent.\\
+
+A series $\sum a_n$ is called {\bf conditionally convergent} if the series is convergent but not absolutely convergent.\\
+
+EXAMPLES:\\
+
+$\sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n}$\quad 
+
+\vspace{1.5in}
+
+$\sum_{n=1}^{\infty} \frac{(-1)^{n-1}}{n^2}$\quad 
+
+
+\vspace{1.5in}
+
+THEOREM:  If a series $\sum a_n$ is absolutely convergent, then it is convergent.\\
+
+\vspace{.5in}
+
+$\sum_{n=1}^{\infty} \frac{\cos{n}}{n^2}$\quad 
+
+\pagebreak
+
+EXERCISES:\\
+
+$\sum_{n=1}^{\infty} \frac{(-1)^{n-1}\sqrt{n}}{3n+2}$
+
+\vspace{1.8in}
+
+$\sum_{n=1}^{\infty} (-1)^{n-1}\sin{\left( \frac{1}{n} \right)}$
+
+\vspace{1.8in}
+
+$\sum_{n=1}^{\infty} \frac{n\cos{(n\pi)}}{4^n}$
+
+\vspace{1.8in}
+
+$\frac{1}{\ln{3}} - \frac{1}{\ln{5}} + \frac{1}{\ln{7}} - \frac{1}{\ln{9}} + ....$
+
+
+
+
+\end{document}
+
+
+
+

@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 9.5:  Linear Differential Equations}\\
+
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+\vspace{0.2in}
+
+A differential equation is called {\bf linear} if can be written in the form
+
+\begin{displaymath}
+  \frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}
+
+\vspace{0.2in}
+where $P$ and $Q$ are continuous functions on some interval.  
+
+\vspace{.5in}
+
+Solution method is based on the Product Rule
+
+\begin{displaymath}
+  \frac{d}{dx}[xy] = y + x \frac{dy}{dx}
+\end{displaymath}
+
+\vspace{0.2in}
+  
+  EXAMPLE:\\
+
+\begin{displaymath}
+x \frac{dy}{dx} + y = x
+\end{displaymath}
+  
+\vspace{1.5in}
+
+
+More generally, we will need to multiply by an {\bf integrating factor} $u(x)$ in order to use the Product Rule.
+
+\begin{displaymath}
+y' -2y = 3e^x
+\end{displaymath}
+
+\pagebreak
+
+Solve the initial value problem:\\
+
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+  xy'+2y = 4x^2 \\
+y(1) = 2 \\
+\end{array} \right.
+\end{displaymath}
+
+\vspace{3.5in}
+
+We can write down the formula for a solution in terms of $P$ and $Q$
+
+\begin{displaymath}
+  \frac{dy}{dx} + P(x)y = Q(x)
+\end{displaymath}
+
+
+\vspace{2.5in}
+
+\pagebreak
+
+
+APPLICATIONS:\\
+
+A tank contains 1000 L of whiskey 35\% alcohol.   At $t=0$, a whiskey with concentration 45\% alcohol begins
+flowing into the tank at a rate of 2 L/min. If the tank is kept well-stirred and is drained at a rate of 5 L/min,
+find the concentration of the whiskey blend in the tank as a function of time.
+
+\pagebreak
+
+The following modification of Newton's Law of Cooling can be used in the case that the ambient temperature varies in time.
+    \begin{displaymath}
+  \left\{ \begin{array}{ll}
+\frac{dT}{dt} = k(A(t) - T)\\
+T(0) = T_0 \\
+\end{array} \right.
+  \end{displaymath}
+    Suppose for example that $A(t)$ represents the outside temperature and $T(t)$ is the interior temperature of a building with no climate control.  If we
+    measure $T$ in hours, it might be reasonable to assume $A$ is a periodic function such as $A(t) = 14 + 5\cos{\frac{\pi t}{12}}$.\\
+
+    Let's take $T_0 = 19$, $k=0.15$/hr, and see what the model predicts.
+
+
+\end{document}
+
+
+
+

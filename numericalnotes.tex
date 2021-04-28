@@ -1,0 +1,142 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, psfrag, epsfig, fleqn}
+\pagestyle{empty}
+\setlength\parindent{0pt}
+\begin{document}
+
+%\maketitle
+\begin{center}
+\Large
+\rm{Numerical Integration}
+\end{center}
+\vspace{0.05in}
+
+The following formulas are used to find approximations of definite integrals when the antiderivatives involved are unknown.
+In all of the formulas, $N$ is an integer that represents the number of pieces in to which the integral is divided, $\Delta x = (b-a)/N$, 
+and $x_i = a+i\Delta x$. 
+
+\vspace{0.5cm}
+
+{\bf Midpoint Rule}
+\begin{displaymath}
+\int_a^bf(x)\,dx \approx M_N = \Delta x\left[f(\bar{x}_1) + f(\bar{x}_2) + f(\bar{x}_3) + .... + f(\bar{x}_{N-1}) + f(\bar{x}_N)\right]
+\end{displaymath}
+where $\bar{x}_i = (x_i+x_{i-1})/2$ are the midpoints of the intervals $[x_{i-1},x_i]$.
+
+\vspace{0.5cm}
+
+{\bf Trapezoid Rule}
+\begin{displaymath}
+\int_a^bf(x)\,dx \approx T_N = \frac{\Delta x}{2}\left[f(x_0) + 2f(x_1) + 2f(x_2) + .... + 2f(x_{N-1}) + f(x_N)\right]
+\end{displaymath}
+
+\vspace{0.5cm}
+
+{\bf Simpson's Rule}
+\begin{displaymath}
+\int_a^bf(x)\,dx \approx S_N = \frac{\Delta x}{3}\left[f(x_0) + 4f(x_1) + 2f(x_2) +  4f(x_3) + .... + 2f(x_{N-2}) + 4f(x_{N-1}) + f(x_N)\right]
+\end{displaymath}
+where $N$ {\bf is an even integer.}
+
+\vspace{0.5cm}
+
+{\bf Example:}
+Using the rules above, and $N=6$, we will approximate the integral 
+\begin{displaymath}
+\int_1^4\sqrt{\ln{x}}\,dx 
+\end{displaymath}
+For all three formulas $\Delta x = (4-1)/6 = 0.5$, $x_0=1$, $x_1=1.5$, $x_2=2$, $x_3=2.5$, $x_4=3$, $x_5=3.5$, $x_6=4$.  
+\\
+For the Midpoint Rule, we calculate $\bar{x}_1=1.25$, $\bar{x}_2=1.75$, $\bar{x}_3=2.25$, $\bar{x}_4=2.75$, $\bar{x}_5=3.25$, $\bar{x}_6=3.75$. 
+\begin{eqnarray*}
+M_6 &=& 0.5\left[f(1.25) + f(1.75) + f(2.25) + f(2.75) + f(3.25) + f(3.75)\right] \\
+    &=& 0.5\left[\sqrt{\ln{1.25}} + \sqrt{\ln{1.75}} + \sqrt{\ln{2.25}} + \sqrt{\ln{2.75}} + \sqrt{\ln{3.25}} + \sqrt{\ln{3.75}}\right] \\
+    &\approx & 2.6810
+\end{eqnarray*}
+
+For the Trapezoid Rule:
+\begin{eqnarray*}
+T_6 &=& \frac{0.5}{2}\left[f(1.0) + 2f(1.5) + 2f(2.0) + 2f(2.5) + 2f(3.0) + 2f(3.5)+ f(4.0)\right] \\
+    &=& \frac{0.5}{2}\left[\sqrt{\ln{1}} + 2\sqrt{\ln{1.5}} + 2\sqrt{\ln{2.0}} + 2\sqrt{\ln{2.5}} + 2\sqrt{\ln{3.0}} + 2\sqrt{\ln{3.5}} + \sqrt{\ln{4}}\right] \\
+    &\approx & 2.5913
+\end{eqnarray*}
+
+For Simpson's Rule:
+\begin{eqnarray*}
+S_6 &=& \frac{0.5}{3}\left[f(1.0) + 4f(1.5) + 2f(2.0) + 4f(2.5) + 2f(3.0) + 4f(3.5)+ f(4.0)\right] \\
+    &=& \frac{0.5}{3}\left[\sqrt{\ln{1}} + 4\sqrt{\ln{1.5}} + 2\sqrt{\ln{2.0}} + 4\sqrt{\ln{2.5}} + 2\sqrt{\ln{3.0}} + 4\sqrt{\ln{3.5}} + \sqrt{\ln{4}}\right] \\
+    &\approx & 2.6319
+\end{eqnarray*}
+
+{\bf Exercise:}
+Find $M_8$, $T_8$, and $S_8$ for the following integral:
+\begin{displaymath}
+\int_0^2 \frac{dx}{1+x^6}
+\end{displaymath}
+\pagebreak
+
+{\bf Error bounds}
+
+The formulas provide only approximations to the true value of an integral.  Associated with each formula is an error.  The error is the difference
+between the true value of the integral and that produced by the formula.
+\begin{displaymath}
+E_M = \int_a^bf(x)\,dx - M_N \quad\quad E_T = \int_a^bf(x)\,dx - T_N \quad\quad E_S = \int_a^bf(x)\,dx - S_N
+\end{displaymath}
+For the Midpoint Rule and Trapezoid rule we have the following formula to estimate the error
+\begin{displaymath}
+|E_M| \leq \frac{K(b-a)^3}{24N^2} \quad\quad |E_T| \leq \frac{K(b-a)^3}{12N^2}
+\end{displaymath}
+where $K$ is a number such that $|f''(x)| < K$ when $x$ is in the interval $[a,b]$.
+\\
+For Simpson's Rule we have a similar formula to estimate the error
+\begin{displaymath}
+|E_S| \leq \frac{K(b-a)^5}{180N^4} 
+\end{displaymath}
+where $K$ is a number such that $|f''''(x)| < K$ when $x$ is in the interval $[a,b]$.
+\vspace{0.2cm}
+
+{\bf Example:}
+
+Suppose we use the Trapezoid Rule with $N=8$ to approximate the value of the integral 
+\begin{displaymath}
+\int_0^1\cos{x^2} \,dx 
+\end{displaymath}
+with $T_8 \approx 0.90233$ (check the number for yourself).  We would now like to know how large the error might be
+by using the formula for $E_T$.  We will use $b-a = 1$ and $N=8$.  The more difficult part of the problem is to find 
+a value of $K$.  Taking two derivatives of $\cos{x^2}$, we find
+\begin{displaymath}
+f''(x) = -2\left[\sin{x^2}+2x^2\cos{x^2} \right]
+\end{displaymath}
+We need a number $K$ so that $|f''(x)| \leq K$.  We notice that $|\sin{x^2}| \leq 1$ and $|\cos{x^2}| \leq 1$ for any value of $x$. 
+Also, $x^2 \leq 1$ when $x$ is between 0 and 1.  If we put all of this facts together we get 
+\begin{displaymath}
+|f''(x)| = |-2\left[\sin{x^2}+2x^2\cos{x^2} \right]| \leq 2\left[1+ 2(1)\right] = 6
+\end{displaymath}
+Using $K=6$, we can use the error formula to determine that $|E_T| \leq 0.0078125$.  
+
+Alternatively, we might try plotting $|f''(x)|$ and observe that it is maximum when $x=1$.  We could then use
+\begin{displaymath}
+K = |-2\left[\sin{1}+2\cos{1} \right]| \approx 3.8442
+\end{displaymath}
+and $|E_T| \leq 0.00501$.  The true error in the $T_8$ approximation must be less than this number.  
+
+\vspace{0.3cm}
+
+{\bf Exercise:}
+Consider the following integral:
+\begin{displaymath}
+\int_0^{\pi}\sin{x} \,dx 
+\end{displaymath}
+\begin{enumerate}
+\item{Find $M_{10}$, $T_{10}$, and $S_{10}$, and the corresponding errors $E_M$, $E_T$, and $E_S$.}
+\item{Compute the error bounds using the formulas and then compare them with the true errors $E_M$, $E_T$, and $E_S$.}
+\item{How large do we have to choose $N$ so that $T_N$ are accurate to within 0.00001?  Use the error bound formula.}
+\end{enumerate}
+
+\end{document}
+
+
+
+
+

@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 5.3:  Fundamental Theorem of Calculus}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+Area function:  Let $g(x) = \int_a^xf(t)\, dt$.
+
+
+\vspace{2.2in}
+
+
+EXAMPLE: \\
+
+$g(x) = \int_0^x(2-t)\, dt$.
+
+\vspace{1.5in}
+
+\pagebreak
+
+{\bf Fundamental Theorem of Calculus (Part I)} \\
+
+If $f$ is continuous on $[a,b]$, then $g(x) = \int_a^xf(t)\, dt$ is continuous on $[a,b]$,
+differentiable on $(a,b)$, and $g'(x) = f(x)$.
+
+
+\vspace{1.5in}
+
+EXAMPLES:\\
+
+Differentiate the following functions.\\
+
+$g(x) = \int_1^x t^3\,dt$
+
+\vspace{0.5in}
+
+
+$h(x) = \int_{\pi}^x \cos{\sqrt{u}}\,du$
+
+
+\vspace{0.5in}
+
+
+NOTES:
+
+
+\vspace{2in}
+
+MORE EXAMPLES:\\
+
+$y(x) = \int_{x}^0 \frac{\sin{\theta}}{\theta^2+1}\,d\theta$
+
+
+\pagebreak
+
+$z(x) = \int_{3}^{\sqrt{x}} 2p^2-p\,dp$
+
+\vspace{2in}
+
+
+Proof of FTC I: \\
+
+
+\vspace{3.5in}
+
+\pagebreak
+
+{\bf Fundamental Theorem of Calculus (Part II)} \\
+
+If $f$ is continuous on $[a,b]$, then $\int_a^bf(x)\, dx = F(b)-F(a)$ where $F$ is any
+antiderivative of $f$
+
+\vspace{.8in}
+
+EXAMPLES:\\
+
+$\int_{0}^{1}1-x^2\, dx$
+
+\vspace{1.5in}
+
+$\int_{0}^{\pi/2}\cos{\theta}\, d\theta$
+
+
+\vspace{1in}
+
+Proof of FTC II: \\
+
+
+\pagebreak
+
+
+EXAMPLES:\\
+
+$\int_{1}^{4}\frac{1}{x}\, dx$
+
+\vspace{1.5in}
+
+$\int_{0}^{9}\sqrt{2t}\, dx$
+
+\vspace{1.5in}
+
+$\int_{-2}^{2}(3u+1)^2\, du$
+
+\vspace{1.5in}
+
+Integrals where the integrand is discontinuous?\\
+
+\vspace{.3in}
+Find $\int_{0}^{2}g(x)\, dx$ if\\
+
+  \begin{displaymath}
+g(x) =   \left\{ \begin{array}{ll}
+3-x & x < 1 \\
+-x^2 & x \ge 1\\
+\end{array} \right.
+  \end{displaymath}
+
+
+
+
+\vspace{1.5in}
+
+
+$\int_{-2}^{1}\frac{1}{x^2}\, dx$
+
+\vspace{1.5in}
+
+
+
+
+
+EXERCISES: \\
+
+
+$\int_{0}^{4}(4-t)\sqrt{t}\, dt$
+
+\vspace{1.in}
+
+$\int_{1}^{18}\sqrt{\frac{3}{z}}\, dz$
+
+\vspace{1.in}
+
+$\int_{1}^{2}\frac{u+5u^5}{u^3}\, du$
+
+\vspace{1.in}
+
+$\int_{-1}^{4}3^x\, dx$
+
+\vspace{1.in}
+
+$\int_{-\sqrt{3}/2}^{\sqrt{3}/2}\frac{1}{\sqrt{1-w^2}}\, dw$
+
+\vspace{1.in}
+
+\end{document}
+
+

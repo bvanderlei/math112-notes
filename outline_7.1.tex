@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 7.1:  Integration by Parts}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+{\bf Integration by parts} is the name of the formula we get if we undo the Product Rule.\\
+
+
+\vspace{3.5in}
+
+
+The formula is used to exchange one integral for another.  Ideally, we would like to get a more simple integral in
+the exchange.\\
+
+EXAMPLES: \\
+
+
+$\int x\cos{x} \, dx$
+
+\vspace{1.5in}
+
+$\int xe^{3x}\, dx$
+
+
+\vspace{2in}
+
+
+\pagebreak
+
+$\int x\ln{x} \, dx$
+
+
+\vspace{1.5in}
+
+$\int e^{2t}\cos{t} \, dt$
+
+
+\vspace{2.5in}
+
+REDUCTION FORMULAS:\\
+
+$\int t^ne^{t} \, dt = x^ne^x - n\int x^{n-1}e^x \, dx$
+
+
+\vspace{3in}
+
+\pagebreak
+
+$\int \cos^n{\theta} \, d\theta = \frac{1}{n}\sin{\theta}\cos^{n-1}{\theta} + \frac{n-1}{n}\int \cos^{n-2}{\theta} \, d\theta$
+
+
+\vspace{3.5in}
+
+
+DEFINITE INTEGRALS:\\
+
+$\int_1^{3} t^3\ln{t} \, dt$
+
+    \vspace{1.5in}
+
+$\int_0^{\pi} x^2\sin{x} \, dx$
+
+    \vspace{2in}
+
+\pagebreak
+
+INTEGRALS OF BASIC FUNCTIONS:\\
+
+
+$\int \ln{x} \, dx$
+
+\vspace{2in}
+
+$\int \arctan{x} \, dx$
+
+\vspace{2in}
+
+INTEGRATION BY PARTS + SUBSTITUTION RULE:\\
+
+$\int \sin{(\ln{x})} \, dx$
+
+\vspace{2in}
+
+
+$\int \sqrt{x}e^{\sqrt{x}} \, dx$
+
+\pagebreak
+
+SUMMARY: \\
+
+Integration by parts is \emph{typically} useful if the integrals involve any of the following:
+
+\begin{itemize}
+\item{Products of $x^n$ with trigonometric functions, logarithmic functions, or exponential functions}
+\item{Products of exponential and trigonometric functions}
+\item{Logarithmic functions}
+\item{Inverse trigonometric functions}
+
+  
+  \end{itemize}
+
+
+EXERCISES:\\
+
+$\int t\sin{4t} \, dt$
+
+\vspace{1in}
+
+$\int x^2\ln{2x} \, dx$
+\vspace{1in}
+
+$\int x\ln{x^3} \, dx$
+\vspace{1in}
+
+$\int (\ln{x})^2 \, dx$
+
+\vspace{1in}
+
+$\int e^x\sin{5x} \, dx$
+
+\end{document}
+
+

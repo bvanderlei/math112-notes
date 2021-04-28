@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{1in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 7.3:  Trigonometric Substitutions}
+\\
+\end{center}
+\vspace{0.2in}
+
+Previously, we made substitutions of the form $u=g(x)$.  We now consider making substitutions such as $x=h(\theta)$\\
+
+\vspace{2in}
+
+In the following examples, $h$ will be a trigonometric function, but there is no reason that requires it.\\
+
+EXAMPLE:\\
+
+Calculate the area of a circle using an integral.
+
+\pagebreak
+
+We will make a choice of substitution based on comparing the integrand to this table.\\
+
+\vspace{0.2in}
+
+\begin{tabular}{|c|c|}\hline
+Form of integrand & Substitution \\
+\hline
+& \\
+$a^2-x^2$ & $x = a\sin{\theta}$ \\
+$x^2-a^2$ & $x = a\sec{\theta}$ \\
+$x^2+a^2$ & $x = a\tan{\theta}$ \\
+\hline
+\end{tabular}
+\vspace{0.5in}
+
+
+EXAMPLE:\\
+
+\vspace{0.2in}
+
+
+$\int \frac{1}{x^2\sqrt{x^2+4}}\, dx$
+
+\pagebreak
+
+The steps to follow (which are similar to those used to apply the substitution rule) are:
+
+\begin{enumerate}
+	\item {Choose $x= \FillInBlank$ and calculate the corresponding $dx$.}
+	\item{Exchange \emph{all} $x$ for $\theta$.}
+	\item{Do the integral with trig functions.}
+	\item{Draw a triangle if needed to help undo the substitution.}
+\end{enumerate}
+
+EXAMPLES:\\
+
+
+$\int \frac{\sqrt{x^2-1}}{x} \, dx$
+
+\vspace{2in}
+
+$\int \frac{dx}{[(ax)^2+b^2]^{3/2}} $
+
+\vspace{2in}
+
+$\int  \frac{x}{\sqrt{x^2-1}} \, dx$
+
+\vspace{2in}
+
+$\int  \frac{\sqrt{16-x^2}}{x} \, dx$
+
+\vspace{2in}
+
+
+$\int \frac{dt}{\sqrt{t^2-6t+13}} $
+
+\vspace{2in}
+
+
+$\int  \frac{1}{3x^2+8} \, dx$
+
+
+\vspace{2in}
+
+
+$\int_0^2  \frac{e^t}{\sqrt{1+e^{2t}}} \, dt$
+
+
+
+\end{document}
+
+

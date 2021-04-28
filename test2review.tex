@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Practice Problems}
+\\
+\vspace{0.2in}
+
+\end{center}
+
+
+  \begin{enumerate}
+
+  \item{Evaluate the integrals:
+
+    \vspace{0.1in}
+    
+    $\int \frac{x+2}{x^2+3x-4} \, dx$
+
+\vspace{0.2in}
+    
+        $\int \ln{(1+x^2)} \, dx$
+
+\vspace{0.2in}
+    
+        $\int_0^{\pi} t\cos^2{t} \, dt$
+
+\vspace{0.2in}
+    
+        $\int_0^4 \frac{z}{z-3} \, dz$  \hspace{0.8in} \mbox{Be careful.}
+
+\vspace{0.2in}
+    
+        $\int_{0}^{\sqrt{2}/2} \frac{x^2}{\sqrt{1-x^2}} \, dx$
+
+\vspace{0.2in}
+    
+     
+$\int_0^2 x^3\sqrt{4x^2-x^4} \, dx$ \hspace{0.4in} \mbox{Use the formula} $\, \, \int \sqrt{a^2-u^2} \, du = \frac{u}{2}\sqrt{a^2-u^2}
++\frac{a^2}{2}\sin^{-1}{\frac{u}{a}} + C$
+    
+ 
+  }
+
+    \vspace{0.1in}
+
+\item{The table shows values of a force function $f(x)$.  Use Trapezoid, Midpoint, and Simpson's Rules to estimate the work done in moving an object from $x=0$ to $x=18.$}
+
+  \vspace{0.15in}
+  
+\begin{tabular}{|c| c| c| c| c| c| c| c| c|} \hline
+$t$ & 0 & 3 & 6 & 9 & 12 & 15 & 18  \\ 
+\hline
+$r(t)$ & 9.2 & 8.9 & 8.6 & 8.0 & 7.7 & 7.6 & 7.0 \\ 
+\hline
+\end{tabular}
+
+\vspace{0.2in}
+
+\item {Consider the following definite integral. 
+\begin{displaymath}
+\int_1^4 \frac{1}{\sqrt{x}}\, dx
+\end{displaymath}
+\begin{enumerate}
+\item{Calculate the $T_6$, $M_6$, and $S_6$ approximations using Trapezoid, Midpoint, and Simpsons Rule.}
+\item{How large should $N$ be so that the error in the Midpoint Rule approximation is less than 0.0005?}
+\end{enumerate}
+}
+
+  \pagebreak
+  
+\item{If $f(t)$ is continuous for $t\ge 0$, the \emph{Laplace transform} of $f$ is defined as 
+\begin{displaymath}
+F(s) = \int_{0}^{\infty}f(t)e^{-st} \, dt.
+\end{displaymath}
+
+\begin{enumerate}
+\item{Find a formula and domain for $F(s)$ if $f(t) = t$.}
+  \item{Find a formula and domain for $F(s)$ if $f(t) = e^{2t}$.}
+\end{enumerate}
+}
+
+
+  \item {Calculate the second Taylor polynomial, $T_2(x)$, for the function $f(x)=\sec{x}$ at $a=0$.  
+  }
+
+  \item{Find the sum of each series, or explain why the series diverges.\\
+
+    $ 1 - \frac{2}{7} + \frac{4}{49} - \frac{8}{243} + ...$\\
+
+        $ \frac{1}{5} + \frac{1}{9} + \frac{1}{13} +  \frac{1}{17} + ...$\\
+
+    $ 1 + 2 + \frac{4}{2!} + \frac{8}{3!} + \frac{16}{4!} ...$\\
+
+          $3 +  \frac{5}{3} + \frac{7}{5} + \frac{9}{7} ...$\\
+
+    $\sum_{n=1}^{\infty}\ln{\left(1+\frac{1}{n}  \right)}$
+
+    $\sum_{n=1}^{\infty}\frac{n}{(n+1)!}$
+  }
+
+
+  \item{     Explain why the radius of convergence for $\sum c_n(x-a)^n$ is $\lim_{n\to\infty}\left|\frac{c_n}{c_{n+1}} \right|$, if this
+  limit exists.}
+
+
+    \item{For what values of $x$ do the following series converge\\
+
+      $\sum_{n=1}^{\infty}\frac{(-1)^n}{(2n-1)2^n}(x-1)^n$\\
+      
+      $\sum_{n=1}^{\infty}\frac{3^n}{x^n}$
+    }
+
+    \item{ Suppose $a$ and $b$ are real numbers with $a<b$.  Find a power series that converges on $(a,b]$.}
+      
+      \item{Find all positive values of $b$ for which the series $\sum_{n=1}^{\infty}b^{\ln{n}}$ converges.}
+\end{enumerate}
+
+
+\end{document}
+
+

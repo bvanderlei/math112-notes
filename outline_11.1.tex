@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.1:  Sequences}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+
+A {\bf sequence} as a list of numbers in a definite order.  Our goal is to understand infinite sequences and their limits.
+
+\vspace{0.7in}
+
+NOTATION:
+
+\vspace{0.7in}
+
+
+EXAMPLES:\\
+
+
+$\left\{\frac12, \frac23, \frac34, \frac45, ... \right\}$
+
+\vspace{0.7in}
+
+$\left\{\frac{(-1)^{n+1}}{n} \right\}_{n=1}^{\infty}$
+
+\vspace{0.7in}
+
+$\left\{\cos{\left(\frac{n\pi}{4}\right)} \right\}_{n=0}^{\infty}$
+
+\vspace{0.7in}
+
+EXERCISES:
+
+Find a formula for $a_n$ in terms of $n$\\
+
+$\left\{3, \frac32, \frac34, \frac38,  ... \right\}$
+
+\vspace{0.7in}
+
+$\left\{\frac{-1}{6}, \frac{3}{10}, \frac{-5}{14}, \frac{7}{18}, ... \right\}$
+
+\pagebreak
+
+If we can write a formula for $a_n$ in terms of $n$, we can think of the sequence as a function with domain $\left\{1, 2, 3, 4,  ... \right\}$.
+
+\vspace{2in}
+
+
+Some sequences may be easier to describe with recurrence relations (later terms are related to earlier terms)\\
+
+EXAMPLES:\\
+
+$a_1= 0, \quad a_2=1, \quad a_n=\frac{-a_{n-2}}{n^2}$
+
+\vspace{2in}
+
+
+$a_1= 1, \quad a_2=1, \quad a_n= a_{n-1}+a_{n-2} \quad\quad$  (Fibonacci sequence)
+
+
+\vspace{2in}
+
+Let $C_n$ be the amount of caffeine in a person's blood stream in units of bce (Ben's coffee equivalent).  It is known that after
+one hour the body will have absorbed 13\% of the caffiene.  Suppose that Ben starts his morning with one coffee ($C_0 = 1$) and at the end of each hour quickly drinks another coffee.
+
+\pagebreak
+
+We define the {\bf limit} of a sequence similar to the way we define the limit of a function at infinity.\\
+
+\begin{displaymath}
+  \lim_{n\to \infty}a_n = L
+\end{displaymath}
+
+means that all $a_n$ for which $n > N$ are arbitrarily close to $L$ when $N$ is sufficiently large.  We say  that $L$ is the {\bf limit} of the sequence.\\
+
+If the limit exists we say that the sequence {\bf converges}. \\
+If the limit does not exist we say that the sequence {\bf diverges}.
+
+
+\vspace{.5in}
+
+(EXAMPLES)\\
+
+$a_n=\frac{3}{2^{n-1}}$
+
+\vspace{.7in}
+
+
+$b_n=\frac{2n}{3n^2+1}$
+
+\vspace{.7in}
+
+$c_n=\cos{\left(\frac{n\pi}{4}\right)}$
+
+\vspace{.7in}
+
+$d_n=n^2$
+
+\vspace{.7in}
+
+$a_n=\frac{\ln{n}}{n}$
+
+
+
+
+\pagebreak
+
+THEOREM:  If $\lim_{n\to\infty}|a_n| = 0$, then $\lim_{n\to\infty}a_n = 0$\\
+
+\vspace{.1in}
+
+EXAMPLE:\\
+
+$a_n=\frac{(-1)^{n+1}n^2}{2n^4+5}$
+
+\vspace{1in}
+
+$b_n=\frac{(-1)^{n+1}n^2}{2n^2+5}$
+
+
+\vspace{1.2in}
+
+For what values of $r$ does $r^n$ converge?
+
+\vspace{1.5in}
+
+OTHER SEQUENCES:\\
+
+$a_n=\frac{n!}{2^n}$
+
+\vspace{1.2in}
+
+
+
+
+$\left\{1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1,   ... \right\}$
+
+\pagebreak
+
+But what happens to Ben!?  $C_n = 0.87C_{n-1} + 1$
+
+\vspace{5in}
+
+MONOTONE CONVERGENCE THEOREM:  Every bounded monotone sequence is convergent.
+
+\pagebreak
+
+
+
+DYNAMICAL SYSTEMS: \\
+
+Let $P_t$ represent the population of species in a given habitat in year $t$.  One simple way to model the population is to suppose that the population in the future year, $P_{t+1}$ is a function of $P_{t}$, the population during the current year.\\
+
+\begin{displaymath}
+P_{t+1} = 1.07P_t
+  \end{displaymath}
+
+\vspace{2.5in}
+
+\begin{displaymath}
+P_{t+1} = \frac{1000}{200+P_t}P_t
+  \end{displaymath}
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,175 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 11.8:  Power Series}
+\\
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+A {\bf power series} is a series that has the form
+
+  \begin{displaymath}
+\sum_{n=0}^{\infty}c_n(x-a)^n
+  \end{displaymath}
+  where $x$ is a variable, $a$ is a constant, and the sequence of values $c_n$ are constants.  The series is considered a function of $x$.
+  \vspace{0.3in}
+
+ EXAMPLE:\\
+
+ $\sum_{n=1}^{\infty} \frac{(x-3)^n}{n}$
+
+ \vspace{3in}
+
+ THEOREM:  For a power series  $\sum_{n=0}^{\infty}c_n(x-a)^n$, there are three possibilities:
+
+ \begin{enumerate}
+ \item{The series converges only when $x=a$.}
+ \item{The series converges for all $x$.}
+ \item{There is a positive number $R$ such that the series converges if $|x-a|<R$ and diverges if $|x-a|>R$.}
+ \end{enumerate}
+
+ $R$ is called the {\bf radius of convergence}.
+ 
+
+ \pagebreak
+
+ EXAMPLES:  (For each series, find the radius of convergence and the {\bf interval of convergence}.)\\
+
+ 
+
+ 
+ $\sum_{n=1}^{\infty} \frac{4^nx^n}{n^2}$
+
+ \vspace{2.8in}
+
+ $\sum_{n=0}^{\infty} \frac{(-1)^{n+1}x^{2n}}{2^{2n}(n!)^2}$
+
+
+ \vspace{3.1in}
+
+ $\sum_{n=0}^{\infty} x^n(n!)$
+ 
+ \pagebreak
+
+ $\sum_{n=2}^{\infty} \frac{x^{2n}}{n(\ln{n})^3}$
+ 
+ 
+ \vspace{3in}
+
+
+ $\sum_{n=1}^{\infty} \frac{(2x-1)^n}{5^n\sqrt{n}}$
+
+ \vspace{3in}
+
+ $\sum_{n=0}^{\infty} \frac{n^2}{6^{n+2}}(x+3)^n $
+
+\pagebreak
+
+EXERCISES:\\
+
+For each series, find the radius of convergence and the interval of convergence.\\
+
+
+ $\sum_{n=0}^{\infty} \frac{(x-2)^n}{n^2+4} $
+
+  \vspace{1.5in}
+  
+    $\sum_{n=1}^{\infty} n^nx^n$  
+
+  \vspace{1.5in}
+  
+    $\sum_{n=2}^{\infty} \frac{(x-5)^n}{3^n\ln{n}}$  
+
+
+    \vspace{1.5in}
+  
+    $\sum_{n=0}^{\infty} \frac{(n!)^k}{(kn)!}x^n$ \quad ($k$ is some positive integer)  
+
+
+    \vspace{1in}
+    Suppose $\lim_{n\to\infty}\sqrt[n]{|c_n|}=C$.  Explain why the radius of convergence for $\sum c_nx^n$ is $\frac1C$.
+
+    \pagebreak
+    
+\begin{center}
+\Large
+\rm{Chapter 11.9:  Power Series Construction}
+\\
+\end{center}
+\vspace{0.5in}
+
+The goal of this section is to find ways to represent some functions as power series be relating them
+to the sum of the geometric series.
+\begin{displaymath}
+\sum_{n=0}^{\infty}x^n = 1 + x + x^2 + x^3 + .... = \frac{1}{1-x} \quad\quad \mbox{for} \,|x|< 1
+  \end{displaymath}
+
+\vspace{.2in}
+
+EXAMPLES:\\
+
+
+In each case, the goal is to write the function as a power series of the form $\sum c_nx^n$.\\
+
+
+$\frac{1}{1+x}$
+
+\vspace{1.5in}
+
+$\frac{x^3}{1+x^2}$
+
+\vspace{1.5in}
+
+$\frac{1}{x+6}$
+
+
+\pagebreak
+
+THEOREM: \\
+If the power series $\sum c_n(x-a)^n$ has radius of convergence $R>0$,
+then the function $f$ defined by 
+
+\begin{displaymath}
+f(x) = c_0 + c_1(x-1) + c_2(x-a)^2 + .... = \sum_{n=0}^{\infty}c_n(x-a)^n 
+  \end{displaymath}
+is differentiable for $|x-a|<R$ and 
+\begin{eqnarray*}
+f'(x) &=& c_1 + 2c_2(x-a) +  3c_3(x-a)^2.... = \sum_{n=1}^{\infty}c_nn(x-a)^{n-1} \\
+\int f(x)\,dx &=& C + c_0(x-a) + c_1\frac{(x-a)^2}{2} + c_2\frac{(x-a)^3}{3}...  = C + \sum_{n=0}^{\infty}c_n\frac{(x-a)^{n+1}}{n+1}
+  \end{eqnarray*}
+The radius of convergence for both of these new series is also $R$.
+
+\vspace{.5in}
+
+EXAMPLES: \\
+
+In each case, the goal is to write the function as a power series of the form $\sum c_nx^n$.\\
+
+$\frac{1}{(1-x)^2}$
+
+\vspace{2in}
+
+$\ln{|1+x|}$
+
+\vspace{2in}
+
+$\arctan{x}$
+
+
+\end{document}
+
+
+
+

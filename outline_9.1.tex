@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, epsfig, fleqn}
+\setlength{\parindent}{0pt}
+\newcommand{\ud}{\,\mathrm{d}}
+\everymath{\displaystyle}
+\def\FillInBlank{\rule{2.5in}{.01in} }
+\pagestyle{empty}
+
+\begin{document}
+\begin{center}
+\Large
+\rm{Math 112}
+\\
+\rm{Chapter 9.1:  Differential Equations}\\
+
+\end{center}
+\vspace{0.2in}
+\fboxsep0.5cm
+
+\vspace{0.2in}
+
+A {\bf differential equation} is a relationship between and unknown function and its derivatives.
+
+\vspace{0.2in}
+
+EXAMPLES:
+
+\begin{displaymath}
+  \frac{dy}{dt} = 4y
+\end{displaymath}
+\vspace{0.8in}
+
+\begin{displaymath}
+  \frac{dy}{dt} = 3t^2y
+\end{displaymath}
+\vspace{0.8in}
+
+\begin{displaymath}
+  \frac{dy}{dt} = \cos{t}
+\end{displaymath}
+\vspace{0.8in}
+\begin{displaymath}
+  \frac{dy}{dt} + y = e^{-t}
+\end{displaymath}
+\vspace{0.8in}
+NOTES:
+
+\pagebreak
+
+If we attach an {\bf initial condition} to the differential equation, we get what is called an {\bf initial value problem}.\\
+
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+  y' = \cos{t} \\
+y(0) = 6 \\
+\end{array} \right.
+\end{displaymath}
+
+\vspace{0.2in}
+
+A differential equation alone has a family of solutions, a well-posed initial value problem has only one solution.\\
+
+\begin{displaymath}
+  \left\{ \begin{array}{ll}
+  y' + y = e^{-t} \\
+y(0) = 2 \\
+\end{array} \right.
+\end{displaymath}
+
+\vspace{2in}
+
+EXAMPLES OF DIFFERENTIAL EQUATIONS AS MODELS:\\
+
+\begin{enumerate}
+\item{Let $P(t)$ represent the size of a growing population.  Determine an equation for $P$ if it is assumed that rate
+  at which the population grows is proportional to its size.}
+
+\pagebreak
+
+\item{An object falls from a given height with only the force of gravity acting upon it.  Find a differential equation
+for $v(t)$, its velocity as a function of time.}
+
+  \vspace{2in}
+
+\item{An object falls from a given height with only the force of gravity acting upon it.  Find a differential equation
+for $h(t)$, its \emph{height} as a function of time.}
+
+  \vspace{2.5in}
+
+\item{An object falls from a given height, and in addition to the force of gravity, it experiences a drag force
+that is proportional to its velocity.  Find a differential equation for the velocity $v(t)$.}
+
+\pagebreak
+  
+  \vspace{2in}
+\item{A mass is attached to one end of a spring, while the other end is attached to a wall.  The force needed to stretch
+  the spring is proportional to the length it is stretched from equilibrium.  Let $x(t)$ be the position of the mass and
+find a differential equation for $x(t)$.}
+  
+  
+
+\end{enumerate}
+
+
+\pagebreak
+
+\begin{center}
+\Large
+\rm{Direction Fields}\\
+
+\end{center}
+\vspace{0.2in}
+
+If a differential equation can be written in the form
+
+\begin{displaymath}
+  \frac{dy}{dx} = f(x,y)
+\end{displaymath}
+
+\vspace{0.1in}
+
+we say that $f$ is the rate function.  We can use $f$ to draw a {\bf direction field}.\\
+
+\vspace{0.3in}
+
+
+EXAMPLES:
+
+
+\begin{displaymath}
+  \frac{dy}{dx} =  y + x
+\end{displaymath}
+
+\pagebreak
+
+
+
+\begin{displaymath}
+  \frac{dy}{dx} =  4-2y
+\end{displaymath}
+\vspace{1.in}
+
+\vspace{3in}
+
+\begin{displaymath}
+  \frac{dy}{dx} =  y\cos{x}
+\end{displaymath}
+\vspace{1.in}
+
+
+\end{document}
+
+
+
+
